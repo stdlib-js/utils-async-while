@@ -34,38 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-async-while
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-whileAsync = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-while@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var whileAsync = require( 'path/to/vendor/umd/utils-async-while/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-while@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.whileAsync;
-})();
-</script>
+var whileAsync = require( '@stdlib/utils-async-while' );
 ```
 
 #### whileAsync( predicate, fcn, done\[, thisArg ] )
@@ -221,14 +213,9 @@ function done( error ) {
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-repeat@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-while@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var repeatString = require( '@stdlib/string-repeat' );
+var whileAsync = require( '@stdlib/utils-async-while' );
 
 function predicate( i, clbk ) {
     setTimeout( onTimeout, 0 );
@@ -252,11 +239,6 @@ function done( error, result ) {
 }
 
 whileAsync( predicate, fcn, done );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -359,13 +341,13 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/utils/async/do-until]: https://github.com/stdlib-js/utils-async-do-until/tree/umd
+[@stdlib/utils/async/do-until]: https://github.com/stdlib-js/utils-async-do-until
 
-[@stdlib/utils/async/do-while]: https://github.com/stdlib-js/utils-async-do-while/tree/umd
+[@stdlib/utils/async/do-while]: https://github.com/stdlib-js/utils-async-do-while
 
-[@stdlib/utils/async/until]: https://github.com/stdlib-js/utils-async-until/tree/umd
+[@stdlib/utils/async/until]: https://github.com/stdlib-js/utils-async-until
 
-[@stdlib/utils/while]: https://github.com/stdlib-js/utils-while/tree/umd
+[@stdlib/utils/while]: https://github.com/stdlib-js/utils-while
 
 <!-- </related-links> -->
 
