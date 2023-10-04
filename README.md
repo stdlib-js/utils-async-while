@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import whileAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-while@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-async-while/tags). For example,
+
+```javascript
 import whileAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-while@v0.1.1-deno/mod.js';
 ```
 
@@ -210,7 +215,7 @@ function done( error ) {
 
 ```javascript
 import repeatString from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-repeat@deno/mod.js';
-import whileAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-while@v0.1.1-deno/mod.js';
+import whileAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-while@deno/mod.js';
 
 function predicate( i, clbk ) {
     setTimeout( onTimeout, 0 );
