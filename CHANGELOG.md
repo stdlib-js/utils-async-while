@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-03-10)
+## Unreleased (2025-11-07)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`b9b8bcf`](https://github.com/stdlib-js/stdlib/commit/b9b8bcfd9708edd2b7b6c867bdfdde60f8e2b27b) - **chore:** resolve lint error in `utils/async/while` [(#8269)](https://github.com/stdlib-js/stdlib/pull/8269) _(by Suyash Pathak, Athan Reines)_
 -   [`321e49e`](https://github.com/stdlib-js/stdlib/commit/321e49e9965648f1b5eb6a840fe454959af0ec49) - **docs:** add missing periods to list items _(by Philipp Burckhardt)_
 -   [`6e9f42e`](https://github.com/stdlib-js/stdlib/commit/6e9f42e4c912485d9896eaa16c88b70fd3688e97) - **docs:** harmonize list formatting in repl.txt and ensure starting newline _(by Philipp Burckhardt)_
 
@@ -25,9 +26,11 @@
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
 -   Philipp Burckhardt
+-   Suyash Pathak
 
 </section>
 
