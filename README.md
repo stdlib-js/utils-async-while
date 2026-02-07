@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import whileAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-while@deno/mod.js';
+import whileAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-while@v0.2.3-deno/mod.js';
 ```
 
 #### whileAsync( predicate, fcn, done\[, thisArg ] )
@@ -210,7 +210,7 @@ function done( error ) {
 
 ```javascript
 import repeatString from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-repeat@deno/mod.js';
-import whileAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-while@deno/mod.js';
+import whileAsync from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-async-while@v0.2.3-deno/mod.js';
 
 function predicate( i, clbk ) {
     setTimeout( onTimeout, 0 );
